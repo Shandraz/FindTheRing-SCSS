@@ -212,7 +212,7 @@ height: 500px;
 
 .container1, .container2, .container3{
   display: flex;
-  weight: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin: 5%;
@@ -308,31 +308,3 @@ height: 500px;
   margin: -12px;
 }
 
-/* $yellow: yellow;
-$orange: orange;
-
-
-
-@mixin ring ($size, $color){
-  width: $size;
-  height: $size;
-  border-radius:50%;
-  border-color: $color;
-  box-shadow: 10px 5px 5px $color;
-}
-
-ring1 {
-  @include ring(70px,$orange);
-}
-
-ring2 {
-  @include ring(150px,$yellow)
-}
-
-
-
-@for $i from 1 through 20 {
-  span:nth-child(#{$i}) {
-    // your Styles here
-  }
-} */
