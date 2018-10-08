@@ -1,0 +1,27 @@
+$yellow: yellow;
+$orange: orange;
+
+@mixin ring ($size, $color, $thickness){
+  width: $size;
+  height: $size;
+  border-radius:50%;
+  border: $thickness solid $color;
+  box-shadow: 3px 3px 2px 1px rgba(0, 0, 255, .2);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.ring1 {
+  @include ring(70px,$orange, 5px);
+}
+
+.ring2 {
+  @include ring(150px,$yellow, 9px);
+}
+
+@for $i from 1 through 6 {
+    .ring-#{$i} {
+        @include ring(10px*$i, grey, 1px*$i);
+        margin:-2px*$i;
+    }
+}
